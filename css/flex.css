@@ -1,0 +1,210 @@
+/* shared */
+cv-header, cv-work, cv-education, cv-toolset{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px blue solid; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 820px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  /* height: 250px; */
+}
+
+
+/* flex-setting */
+.nine{
+  flex: 9;
+}
+.three{
+  flex: 3;
+}
+.four{
+  flex: 4;
+}
+.six{
+  flex: 6;
+}
+.eight{
+  flex: 8;
+}
+
+.sm-3{
+  flex:12;
+}
+
+.box{
+  height: auto;
+  /* width: 200px; */
+  margin-bottom: 5px;
+  
+}
+
+.item-detail .box{
+ /* border: 1px solid tomato; */
+}
+
+/* styling */
+.margin-top-0{
+  margin-top: 0;
+}
+.margin-bottom-0{
+  margin-bottom: 0;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  padding-bottom: 10px;
+}
+
+h1{
+  margin-right: 5px;
+}
+
+/* cv-header  */
+cv-socials{
+  display: flex;
+  flex-direction: column;
+}
+
+.mytitle{
+  font-size: larger;
+  margin-top: 5px;
+}
+
+/* cv-work */
+cv-work{
+  border-top: 1px #333 solid;
+  flex-direction: row;
+}
+
+.pink-mode-cv-work, .pink-mode-cv-education, .pink-mode-cv-toolset{
+  border-top: 1px white solid;
+}
+
+.section-title{
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.records{
+   margin-top: 20px;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9em;
+  justify-content: space-around;
+  
+}
+
+.item-detail{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.title{
+  font-weight: 500;
+}
+
+.org{
+  margin-top: 3px;
+}
+/* cv-education */
+cv-education{
+  border-top: 1px #333 solid;
+  flex-direction: row;
+}
+/* cv-toolset */
+cv-toolset{
+  border-top: 1px #333 solid;
+}
+
+cv-toolset .group{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px red solid; */
+  font-size: 0.9em;
+}
+
+cv-toolset .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+cv-toolset .tool-item{
+  min-height: 20px;
+  padding-bottom: 30px;
+}
+
+@media all and (max-width: 720px) {
+
+
+  cv-work, cv-education, cv-toolset{
+    flex-direction: column;
+  }
+  body{
+    padding: 15px;
+  }
+  .date{
+    padding-top: 10px;
+  }
+  .item-detail{
+    padding-top: 10px;
+  }
+  cv-toolset .tool-item{
+    font-size: 0.9em;
+    min-height: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 480px) {
+ 
+  .item{
+    flex-direction: column;
+    padding-bottom: 3px;
+    margin-top: 30px;
+    margin-left: 15px;
+    border-top: 1px solid #fff;
+    /* border: 1px green solid; */
+  }
+
+/* 
+  .records{
+    margin-top: 0px;
+  }
+
+  .title{
+    font-weight: 700;
+    padding-bottom: 5px;
+  }
+  */
+  .item-detail{
+    padding-top: 3px;
+    padding-bottom: 10px;
+    /* border: 1px yellow solid; */
+  }  
+
+  cv-toolset .row{
+    flex-direction: column;
+  }
+
+    cv-toolset .tool-item{
+      padding-left: 15px;
+    }
+
+}
