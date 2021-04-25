@@ -6,9 +6,7 @@ cv-header, cv-work, cv-education, cv-toolset{
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  max-width: 820px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1060px;
   position: relative;
   /* height: 250px; */
 }
@@ -103,15 +101,17 @@ cv-work{
 .item{
   display: flex;
   flex-direction: row;
-  font-size: 0.9em;
   justify-content: space-around;
-  
 }
 
 .item-detail{
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
+}
+
+#backBtn{
+  font-size: 2em;
 }
 
 .title{
@@ -136,7 +136,6 @@ cv-toolset .group{
   display: flex;
   flex-direction: column;
   /* border: 1px red solid; */
-  font-size: 0.9em;
 }
 
 cv-toolset .row{
@@ -150,7 +149,9 @@ cv-toolset .tool-item{
   padding-bottom: 30px;
 }
 
-@media all and (max-width: 720px) {
+
+
+@media all and (max-width: 768px) {
 
 
   cv-work, cv-education, cv-toolset{
@@ -166,18 +167,19 @@ cv-toolset .tool-item{
     padding-top: 10px;
   }
   cv-toolset .tool-item{
-    font-size: 0.9em;
+  
     min-height: 10px;
     padding-bottom: 10px;
   }
 }
 
-@media all and (max-width: 480px) {
+
+@media all and (max-width: 600px) {
  
   .item{
     flex-direction: column;
     padding-bottom: 3px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 15px;
     border-top: 1px solid #fff;
     /* border: 1px green solid; */

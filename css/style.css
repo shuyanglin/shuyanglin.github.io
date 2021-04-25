@@ -12,7 +12,7 @@ body{
 }
 
 p{
-    font-size: 0.92em;
+    font-size: 1.1em;
 }
 
 a{
@@ -30,6 +30,7 @@ h1, h2, h3{
     font-weight: 700;
 }
 
+
 header {
   width: 270px;
   float: left;
@@ -38,26 +39,28 @@ header {
 }
 
 section {
-  width: 500px;
+  margin-top: 25px;
+  width: 630px;
   float: right;
 
 }
 
 .wrapper {
-  width: 860px;
+  width: 960px;
   margin: 0 auto;
 }
 
 
 #intro p{
     line-height: 0.6;
+    
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
+  width: 270px;
+  float: left;
+  position: fixed;
+  bottom: 100px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -73,6 +76,7 @@ footer a {
 
 .fa{
     color: #333;
+    font-size: 2em;
 }
 
 .fa-circle{
@@ -82,6 +86,9 @@ footer a {
     color: green;
 } */
 
+#toggleBtn{
+  margin: 20px auto;
+}
 
 @media print, screen and (max-width: 960px) {
 
@@ -101,6 +108,7 @@ footer a {
   }
 
   section {
+
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
