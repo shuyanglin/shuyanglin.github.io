@@ -10,6 +10,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            axios.get('')
+                .then(response => {
+                    console.log(response.data);
+                })
+                .catch(error => console.error(error));
+        </script>
     </head>
     <body onload="storeSessionStorage()">
         <div class="wrapper">
@@ -43,7 +51,7 @@
                     </p>
 
                     <p>
-                        On the side, I help consult my friends in industries to grow their user-friendly projects with our planet Earth in mind. In 2020, I teamed up with my partner and created 1522 Collective to practice people-planet approach through projects around food, democracy, works and education.
+                        On the side, I help consult my <a href="https://www.nytimes.com/2021/04/26/dining/cookpad-recipe-site.html">friends in industries</a> to grow their <a href="https://cookpad-mart.com">user-friendly projects</a> with our planet Earth in mind. In 2020, I teamed up with my partner and created 1522 Collective to practice people-planet approach through projects around food, democracy, works and education.
                     </p>
 
                     <p>
