@@ -16,12 +16,13 @@
     "website"
   ],
   "author": "shuyang lin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/shuyanglin/shuyanglin.github.io/issues"
   },
   "homepage": "https://github.com/shuyanglin/shuyanglin.github.io#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   }
 }
