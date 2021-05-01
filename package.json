@@ -1,0 +1,27 @@
+{
+  "name": "shuyanglin.github.io",
+  "version": "1.0.0",
+  "description": "shuyang's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuyanglin/shuyanglin.github.io.git"
+  },
+  "keywords": [
+    "shu",
+    "web",
+    "website"
+  ],
+  "author": "shuyang lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuyanglin/shuyanglin.github.io/issues"
+  },
+  "homepage": "https://github.com/shuyanglin/shuyanglin.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
