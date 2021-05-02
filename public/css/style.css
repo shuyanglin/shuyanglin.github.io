@@ -90,6 +90,10 @@ footer a {
   margin: 20px auto;
 }
 
+#backBtn{
+  font-size: 2em;
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {

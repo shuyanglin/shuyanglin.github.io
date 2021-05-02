@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>tracks</title>
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/tracks.css" rel="stylesheet">       
+    </head>
+    <body>
+        <a id="backBtn" href="../index.html">&#8592;</a>
+        <h1>Tracks</h1>
+        
+        <p>Total rides: <div id="rideKm">0</div>km</p>
+        <p>Total runs: <div id="runKm">0</div>km</p>
+        
+    <script>
+        console.log("tracks/index.html");
+        var options = {
+            method: 'GET'
+        }
+        fetch('/api', options)
+        .then(response => response.json())
+        .then(function(data) {
+            console.log(data);
+            document.getElementById('rideKm').innerHTML = data.km.ride;
+            document.getElementById('runKm').innerHTML = data.km.run;
+        });
+ 
+    </script> 
+    </body>
+</html>
