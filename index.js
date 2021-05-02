@@ -64,7 +64,7 @@ app.get('/api', function (request, response) {
             })
             .catch(function (error) { 
                 
-                async function refreshToken() { 
+                async function _refreshToken() { 
                     if (error.response.status === 401) {
                         
                         await axios.post('https://www.strava.com/api/v3/oauth/token', {
@@ -97,7 +97,7 @@ app.get('/api', function (request, response) {
                     }
                     callAPIagain();       
                 }
-                refreshToken();
+                _refreshToken();
             });
     }
     makeRequest();
