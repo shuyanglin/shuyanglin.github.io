@@ -4,7 +4,8 @@ const app = express();
 require('dotenv').config();
 
 app.use(express.static('public')); 
-app.listen(8001, () => console.log("listening at port 8001."));
+const port = process.env.PORT || 8000;
+app.listen(port, () => console.log(`listening at port ${port}.`));
 
 app.get('/api', function (request, response) {
 
