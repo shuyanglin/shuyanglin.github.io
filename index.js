@@ -7,16 +7,13 @@ app.use(express.static('public'));
 app.listen(8001, () => console.log("listening at port 8001."));
 
 app.get('/api', function (request, response) {
-    console.log("got request");
 
     var km = {
-        ride: 1000,
-        run: 5000
+        ride: 0,
+        run: 0
     }
 
     var accessToken = process.env.ACCESS_TOKEN;
-    console.log("process.env.ACCESS_TOKEN");
-    console.log(process.env.ACCESS_TOKEN);
     var refreshToken = process.env.REFRESH_TOKEN;
     var clientSecret = process.env.CLIENT_SECRET;
     var clientID = process.env.CLIENT_ID;
@@ -76,7 +73,7 @@ app.get('/api', function (request, response) {
                             grant_type: `refresh_token`
                         }).then(res => {
                             accessToken = res.data.access_token;
-                            console.log("got: " + accessToken);
+                            // console.log("got: " + accessToken);
                             
                         }).catch(error => {
                             console.log(error);
