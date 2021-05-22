@@ -16,7 +16,9 @@
         var options = {
             method: 'GET'
         }
-        fetch('/api', options)
+        // fetch('/api', options)
+        
+        fetch('https://us-central1-shuyanglin-f71ec.cloudfunctions.net/app/api', options)
         .then(response => response.json())
         .then(function(data) {
             console.log(data);

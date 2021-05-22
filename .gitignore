@@ -1,2 +1,6 @@
 .env
 node_modules
+.firebase
+.firebaserc
+.DS_Store
+archive/.DS_Store
