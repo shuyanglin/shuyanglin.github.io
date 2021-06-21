@@ -34,7 +34,6 @@ h1, h2, h3{
 header {
   width: 270px;
   float: left;
-  position: fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -44,6 +43,8 @@ section {
   float: right;
 
 }
+
+
 
 .wrapper {
   width: 960px;
@@ -58,9 +59,9 @@ section {
 
 footer {
   width: 270px;
-  float: left;
+  /* float: left;
   position: fixed;
-  bottom: 100px;
+  bottom: 100px; */
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -87,7 +88,11 @@ footer a {
 } */
 
 #toggleBtn{
-  margin: 20px auto;
+  margin: 20px 5px;
+}
+
+#toggleBtn_A{
+  display: none;
 }
 
 #backBtn{
@@ -105,6 +110,15 @@ footer a {
     float: none;
     position: static;
     width: auto;
+  }
+
+  #toggleBtn{
+    display: none;
+  }
+
+  #toggleBtn_A{
+    margin: 20px 5px;
+    display: block;
   }
 
   header {

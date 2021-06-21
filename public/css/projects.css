@@ -1,0 +1,31 @@
+.projects {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin: 20px auto 30px;
+  max-width: 1060px;
+}
+
+.projects .container{
+  display: flex;
+  flex-flow: row wrap;
+}
+.item{
+  /* background-color: #ddd; */
+  width: 70%;
+  margin: 10px 20px 0px 0px;
+  min-height: 180px;
+  border-top: 5px #3F4143 solid;
+}
+
+.item h4{
+    font-size: 1.5em;
+}
+
+@media print, screen and (max-width: 960px) {
+
+    .item{
+        width: 100%;
+    }
+
+}
